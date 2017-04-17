@@ -17,10 +17,8 @@
 }
 .unslider-arrow.next {
     float: right;
-    right: 0
 }
 .unslider-arrow.prev {
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
-    right: 0;
 }

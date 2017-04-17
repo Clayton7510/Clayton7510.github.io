@@ -11,8 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/css/unslider.css" />
-    <link rel="stylesheet" type="text/css" href="/css/unslider-dots.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/unslider.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/unslider-dots.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -36,14 +36,25 @@
            </header>
          </div>
        </div>
+
+        <div class="container">
+            <div class="space-small"></div>
+
+            <div class="centered">
+                <div class="rulebook-slider">
+                    <ul>
+                        <li>My slide</li>
+                        <li>Another slide</li>
+                        <li>My last slide</li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="space-medium"></div>
+
+        </div>
     </div>
-    <div class="rulebook-slider">
-        <ul>
-            <li>My slide</li>
-            <li>Another slide</li>
-            <li>My last slide</li>
-        </ul>
-    </div>
+
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
@@ -59,8 +70,8 @@
     </div>
 
     {% include analytics.html %}
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="/js/unslider-min.js"></script>
+    <script src="{{ site.baseurl }}/js/jquery-2.1.4.min.js"></script>
+    <script src="{{ site.baseurl }}/js/unslider-min.js"></script>
     <script>
         jQuery(document).ready(function($) {
             $('.rulebook-slider').unslider();
